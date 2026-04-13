@@ -7,3 +7,5 @@ jobs:
     steps:
       - name: Print message
         run: echo "Hello, GitHub Actions!"
+      - name: Print name
+        run: echo "My name is Shivam"
