@@ -1,18 +1,10 @@
 name: My First WorkFlows
-on: push
+on: pull_request
 jobs:
-  say-hello:  
+  say-pr-received:  
     runs-on:  ubuntu-latest
 
     steps:
       - name: Print message
-        run: echo "Hello, GitHub Actions!"
-      - name: Print name
-        run: echo "My name is Shivam"
-  say-byee:
-    runs-on:  ubuntu-latest
-
-    steps:
-      - name: Print message
-        run: echo "Bye, GitHub Actions!"
+        run: echo "Request received, thank you for your contribution!"
 
