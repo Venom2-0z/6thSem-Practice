@@ -9,3 +9,10 @@ jobs:
         run: echo "Hello, GitHub Actions!"
       - name: Print name
         run: echo "My name is Shivam"
+  say-byee:
+    runs-on:  ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Bye, GitHub Actions!"
+
