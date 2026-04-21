@@ -16,6 +16,6 @@ jobs:
        -name: list file
         run: ls 
       - name: setup node
-        run: actions/setup-node@v3
+        run: actions/setup-node@v4
       - name: check version
         run: node --version
