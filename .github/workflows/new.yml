@@ -19,3 +19,5 @@ jobs:
         uses: actions/setup-node@v4
       - name: check version
         run: node --version
+      - name: runtime test
+        run: npm run test
