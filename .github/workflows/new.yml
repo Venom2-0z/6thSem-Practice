@@ -10,12 +10,12 @@ jobs:
   
   test:
     runs-on:  ubuntu-latest
-      steps:
-        - name: checkout code
-          run: acton/checkout@v4
-        -name: list file
-          run: ls 
-        - name: setup node
-          run: actions/setup-node@v4
-        - name: check version
-          run: node --version
+    steps:
+      - name: checkout code
+        run: acton/checkout@v4
+      - name: list file
+        run: ls 
+      - name: setup node
+        run: actions/setup-node@v4
+      - name: check version
+        run: node --version
