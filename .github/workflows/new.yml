@@ -12,7 +12,7 @@ jobs:
     runs-on:  ubuntu-latest
     steps:
       - name: checkout code
-        run: acton/checkout@v4
+        run: actions/checkout@v4
       - name: list file
         run: ls 
       - name: setup node
