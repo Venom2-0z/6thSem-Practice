@@ -1,0 +1,21 @@
+name: My Second WorkFlows
+on: push
+jobs:
+  say-pr-received:  
+    runs-on:  ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Request received, thank you for your contribution!"
+  
+  test:
+    runs-on:  ubuntu-latest
+    steps:
+      - name: checkout code
+        run: acton/checkout@v4
+       -name: list file
+        run: ls 
+      - name: setup node
+        run: actions/setup-node@v3
+      - name: check version
+        run: node --version
