@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "echo \"ok\"",
-    "lint": "echo \"lint ok\"",
+    "lint": "npx eslint .",
     "build": "echo \"build ok\""
   },
   "repository": {
@@ -23,7 +23,11 @@
   "homepage": "https://github.com/Venom2-0z/6thSem-Practice#readme",
   "dependencies": {
     "body-parser": "^2.2.2",
-    "eslint": "^10.2.1",
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.1",
+    "globals": "^17.5.0"
   }
 }
