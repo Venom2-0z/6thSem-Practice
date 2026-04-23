@@ -1,0 +1,25 @@
+name: artifacts
+on: push
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create file
+        run: echo "Hello World" > hello.txt
+      - name: upload on artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: hello-file
+          path: hello.txt
+  job2:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: hello-file
+      - name: read file
+        run: cat hello.txt
+  
