@@ -4,7 +4,10 @@
   "description": "clg class practice actions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"success\""
+    "start": "node server.js",
+    "test": "echo \"ok\"",
+    "lint": "echo \"lint ok\"",
+    "build": "echo \"build ok\""
   },
   "repository": {
     "type": "git",
